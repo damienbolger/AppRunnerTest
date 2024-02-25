@@ -3,6 +3,10 @@ runtime: php81
 build:
   commands:
     build:
+      - chmod +x platform/startup.sh
+      - chmod +x platform/confighooks/prebuild/01_setup_environment.sh
+      - chmod +x platform/hooks/prebuild/01_composer_install.sh
+      - chmod +x platform/hooks/prebuild/02_silverstripe_build.sh
       - platform/confighooks/prebuild/01_setup_environment.sh
     post-build:
       - platform/hooks/prebuild/01_composer_install.sh
