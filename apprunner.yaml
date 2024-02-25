@@ -3,21 +3,15 @@ runtime: php81
 build:
   commands:
     build:
-      - echo Starting build process
-      - chmod +x platform/startup.sh
-      - chmod +x platform/confighooks/prebuild/01_setup_environment.sh
-      - chmod +x platform/hooks/prebuild/01_composer_install.sh
-      - chmod +x platform/hooks/prebuild/02_silverstripe_build.sh
-      - platform/confighooks/prebuild/01_setup_environment.sh
+      - echo Now in Build
     post-build:
-      - platform/hooks/prebuild/01_composer_install.sh
-      - platform/hooks/prebuild/02_silverstripe_build.sh
+      - echo Now in Post Build
   env:
     - name: GRAPHQL_DEV_MODE
       value: true
 run:
   runtime-version: 8.1
-  command: platform/start.sh
+  command: echo Now in Run
   network:
     port: 8000
     env: MY_APP_PORT
