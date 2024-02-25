@@ -1,0 +1,214 @@
+{
+  "name": "firsttable/firsttable",
+  "language-level": "8.1",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-bananas.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-dataobjectcontroller.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-twitter-bootstrap.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-responsive-images.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-logos.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-gridfieldextensions.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-addressable.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-graphql-jwt.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/phpQuery.git",
+      "reference": "dev-php8-compat"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:FirstTable/silverstripe-graphql-devtools.git"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "silverstripe/recipe-core": "4.13.*",
+    "silverstripe/assets": "1.13.*",
+    "silverstripe/config": "1.6.*",
+    "silverstripe/campaign-admin": "1.13.*",
+    "silverstripe/versioned-admin": "1.13.*",
+    "silverstripe/cms": "4.13.*",
+    "silverstripe/errorpage": "^1.10",
+    "silverstripe/graphql": "4.3.*",
+    "silverstripe/reports": "4.7.*",
+    "silverstripe/siteconfig": "4.7.*",
+    "silverstripe/versioned": "1.13.*",
+    "silverstripe/asset-admin": "1.13.*",
+    "silverstripe/subsites": "2.5.*",
+    "silverstripe/blog": "^3.0",
+    "silverstripe/graphql-devtools": "dev-firsttable",
+    "silverstripe/userforms": "^5.11",
+    "silverstripe/recaptcha": "dev-master",
+    "silverstripe/spamprotection": "^3.0",
+    "silverstripe/elemental-fileblock": "^2.0",
+    "silverstripe/crontask": "^2.1",
+    "silverstripe/event-dispatcher": "^0.1.0",
+    "firsttable/silverstripe-dataobjectcontroller": "~5.0",
+    "firsttable/silverstripe-bananas": "5.0.*",
+    "firsttable/silverstripe-twitter-bootstrap": "~4.0",
+    "firsttable/silverstripe-logos": "~4.0",
+    "ryanpotter/silverstripe-cms-theme": "^3.3",
+    "symbiote/silverstripe-gridfieldextensions": "3.x-dev",
+    "league/oauth2-facebook" : "^2.0.5",
+    "facebook/php-business-sdk": "15.0.2",
+    "google/apiclient": "^2.0",
+    "jonom/focuspoint": "^3.0",
+    "php-curl-class/php-curl-class": "^9.10",
+    "ksubileau/color-thief-php": "^1.3",
+    "stripe/stripe-php": "^7.0",
+    "nesbot/carbon": "^2",
+    "bummzack/sortablefile": "^2.0",
+    "symbiote/silverstripe-addressable": "dev-firsttable",
+    "heyday/silverstripe-hashpath": "3.0.5",
+    "predis/predis": "^1.1",
+    "betterbrief/silverstripe-googlemapfield": "^2.1",
+    "kreait/firebase-php": "^5.9.0",
+    "firesphere/graphql-jwt": "dev-firsttable-graphql4.3-php8",
+    "pelago/emogrifier": "^7.0",
+    "twilio/sdk": "^5.23",
+    "league/flysystem-cached-adapter": "^1.1",
+    "ext-gd": "*",
+    "ext-bcmath": "*",
+    "ext-exif": "*",
+    "ext-imagick": "*",
+    "ext-json": "*",
+    "ext-intl": "*",
+    "mandrill/mandrill": "^1.0",
+    "wildbit/postmark-php": "^4.0",
+    "ext-pdo": "*",
+    "ext-dom": "*",
+    "jinjie/ss4-duplicate-dataobject": "^1.1",
+    "drewm/mailchimp-api": "^2.5",
+    "symbiote/silverstripe-queuedjobs": "^4.4",
+    "algolia/algoliasearch-client-php": "^2.3",
+    "heyday/silverstripe-wkhtml": "2.x-dev",
+    "symfony/console": "^5.0",
+    "eluceo/ical": "^0.16.0",
+    "level51/silverstripe-sake-more": "^1.0",
+    "ext-iconv": "*",
+    "dnadesign/silverstripe-elemental": "^4",
+    "dynamic/silverstripe-elemental-baseobject": "^2.1",
+    "sentry/sdk": "^3",
+    "phptek/sentry": "^4",
+    "ext-curl": "*",
+    "giggsey/libphonenumber-for-php": "^8.12",
+    "guzzlehttp/guzzle": "^7",
+    "gmponos/guzzle_logger": "^2.0",
+    "caseyamcl/guzzle_retry_middleware": "^2.5",
+    "league/oauth2-client": "^2.6",
+    "abetomo/convert-athena-query-results-to-array": "^2.0",
+    "hubspot/api-client": "^2.7",
+    "phptek/jsontext": "^2.1",
+    "maxbanton/cwh": "v1.1.14",
+    "zendesk/zendesk_api_client_php": "^2.2",
+    "eljam/guzzle-jwt-middleware": "^1",
+    "cronitor/cronitor-php": "^1.1",
+    "griffinledingham/php-apple-signin": "^1.1",
+    "doctrine/collections": "^1.6",
+    "mistralys/text-diff": "^1.0",
+    "illuminate/support": "^8.83",
+    "spatie/data-transfer-object": "^1.14",
+    "silverstripe/s3": "^1.3",
+    "ext-libxml": "*",
+    "ext-mailparse": "*",
+    "aws/aws-sdk-php": "3.280.x",
+    "google/analytics-data": "0.9.4",
+    "convertapi/convertapi-php": "^1.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6.13",
+    "eloquent/phony-phpunit": "^7.0",
+    "lekoala/silverstripe-debugbar": "2.x-dev",
+    "silverstripe/sqlite3": "^2.2",
+    "silverleague/ideannotator": "3.2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "FirstTable\\": "app/src/",
+      "FirstTable\\Tests\\": "app/tests/"
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "extra": {
+    "project-files": [
+      "app/src/*"
+    ],
+    "project-files-installed": [
+      "app/.htaccess",
+      "app/_config.php",
+      "app/_config/mimevalidator.yml",
+      "app/_config/mysite.yml",
+      "app/src/Pages/Page.php",
+      "app/src/Pages/PageController.php"
+    ],
+    "expose": [
+      "themes/firsttable/production",
+      "themes/kickoff/css",
+      "themes/kickoff/javascript",
+      "themes/kickoff/bootstrap",
+      "themes/kickoff/thirdparty",
+      "themes/kickoff/icomoon",
+      "themes/kickoff/production",
+      "themes/kickoff/images",
+      "themes/kickoff/fonts",
+      "themes/admin/javascript",
+      "themes/admin/bootstrap",
+      "themes/admin/thirdparty",
+      "themes/admin/images",
+      "themes/admin/production",
+      "themes/admin/css",
+      "app/javascript",
+      "app/css",
+      "app/thirdparty",
+      "app/client"
+    ],
+    "public-files-installed": [
+      ".htaccess",
+      "index.php",
+      "web.config"
+    ]
+  },
+  "description": "",
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "silverstripe/vendor-plugin": true,
+      "kylekatarnls/update-helper": true,
+      "silverstripe/recipe-plugin": true,
+      "php-http/discovery": true
+    }
+  },
+  "scripts": {
+    "safe-install-dev": [
+      "composer install --ignore-platform-req=php"
+    ],
+    "safe-update-dev": [
+      "composer update --ignore-platform-req=php"
+    ]
+  }
+}
