@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "build php extensions"
+echo "Build php extensions"
 
 yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
