@@ -1,6 +1,10 @@
+<html>
+<head> <title>Test PHP App</title> </head>
+<body>
 <?php
-
-echo "It works from index.php";
-
-exit;
+    print("index.php is working!");
+    print("<br>");
+?>
+</body>
+</html>
 
