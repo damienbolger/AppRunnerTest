@@ -2,9 +2,8 @@ version: 1.0
 runtime: php81
 build:
   commands:
-    post-build:
-      - platform/confighooks/prebuild/01_setup_environment.sh
-      - platform/hooks/prebuild/01_composer_install.sh
+    - platform/confighooks/prebuild/01_setup_environment.sh
+    - platform/hooks/prebuild/01_composer_install.sh
   env:
     - name: GRAPHQL_DEV_MODE
       value: true
@@ -13,7 +12,6 @@ run:
   command: platform/start.sh
   network:
     port: 8000
-    env: MY_APP_PORT
   env:
     - name: MY_VAR_EXAMPLE
       value: "example"
