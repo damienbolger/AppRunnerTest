@@ -2,11 +2,10 @@ version: 1.1
 runtime: php81
 build:
   commands:
-    pre-build:
-      - echo In pre build stage
     build:
       - PYTHON=python2 amazon-linux-extras install epel
-      - which composer
+      - yum -y update
+      - yum install -y php-cli php-imagick php-mbstring php-pear php-devel php-imagick php-opcache php-intl php-mysqlnd php-gd php-exif php-xsl php-bcmath php-mysqli php-sodium php-mailparse
     post-build:
       - composer install --prefer-dist --no-progress --optimize-autoloader --no-dev
       - composer vendor-expose copy
