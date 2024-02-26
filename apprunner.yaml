@@ -1,11 +1,15 @@
-version: 1.2
+version: 1.0
 runtime: php81
 build:
   commands:
+    pre-build:
+      - yum -y update
     build:
       - chmod +x startup.sh
+    post-build:
+      - yum install -y php-cli
 run:
-  runtime-version: 8.1
+  runtime-version: 8.1.27
   command: ./start.sh
   network:
     port: 8000
