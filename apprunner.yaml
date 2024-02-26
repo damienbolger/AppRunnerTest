@@ -2,12 +2,8 @@ version: 1.0
 runtime: php81
 build:
   commands:
-    pre-build:
-      - yum -y update
     build:
-      - chmod +x startup.sh
-    post-build:
-      - yum install -y php-cli
+      - ./01_setup_environment.sh
 run:
   runtime-version: 8.1.27
   command: ./start.sh
