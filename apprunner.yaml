@@ -5,14 +5,11 @@ build:
     pre-build:
       - echo In pre build stage
     build:
-      - platform/confighooks/prebuild/01_setup_environment.sh
+      - 01_setup_environment.sh
     post-build:
-      - platform/hooks/prebuild/01_composer_install.sh
+      - 01_composer_install.sh
 run:
   runtime-version: 8.1
-  command: platform/start.sh
+  command: ./platform/start.sh
   network:
     port: 8000
-  env:
-    - name: MY_VAR_EXAMPLE
-      value: "example"
