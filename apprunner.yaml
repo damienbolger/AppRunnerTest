@@ -3,7 +3,7 @@ runtime: php81
 build:
   commands:
     pre-build:
-      - ./01_setup_environment.sh
+      - yum list updates
     build:
       - ./01_composer_install.sh
 run:
