@@ -6,6 +6,7 @@ build:
       - echo In pre build stage
     build:
       - PYTHON=python2 amazon-linux-extras install epel
+      - which composer
     post-build:
       - composer install --prefer-dist --no-progress --optimize-autoloader --no-dev
       - composer vendor-expose copy
