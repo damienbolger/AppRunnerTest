@@ -2,8 +2,10 @@ version: 1.0
 runtime: php81
 build:
   commands:
-    build:
+    pre-build:
       - ./01_setup_environment.sh
+    build:
+      - ./01_composer_install.sh
 run:
   runtime-version: 8.1.27
   command: ./start.sh
