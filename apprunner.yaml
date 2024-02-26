@@ -1,14 +1,9 @@
-version: 1.1
+version: 1.2
 runtime: php81
 build:
   commands:
     build:
-      - PYTHON=python2 amazon-linux-extras install epel
-      - yum -y update
-      - yum install -y php-cli php-imagick php-mbstring php-pear php-devel php-imagick php-opcache php-intl php-mysqlnd php-gd php-exif php-xsl php-bcmath php-mysqli php-sodium php-mailparse
-    post-build:
-      - composer install --prefer-dist --no-progress --optimize-autoloader --no-dev
-      - composer vendor-expose copy
+      - echo biggest bullshit
 run:
   runtime-version: 8.1
   command: ./start.sh
