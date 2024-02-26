@@ -6,8 +6,6 @@ build:
       - echo In pre build stage
     build:
       - PYTHON=python2 amazon-linux-extras install epel
-      - yum -y update
-      - yum install -y php-cli
     post-build:
       - composer install --prefer-dist --no-progress --optimize-autoloader --no-dev
       - composer vendor-expose copy
