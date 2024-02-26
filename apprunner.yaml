@@ -3,7 +3,7 @@ runtime: php81
 build:
   commands:
     build:
-      - echo biggest bullshit
+      - chmod +x startup.sh
 run:
   runtime-version: 8.1
   command: ./start.sh
