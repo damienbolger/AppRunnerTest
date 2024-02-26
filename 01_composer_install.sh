@@ -3,3 +3,4 @@
 echo "start composer install"
 composer install --prefer-dist --no-progress --optimize-autoloader --no-dev
 composer vendor-expose copy
+

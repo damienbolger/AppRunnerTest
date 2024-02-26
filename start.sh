@@ -11,3 +11,4 @@ httpd -DFOREGROUND &
 php-fpm -F &
 
 wait
+
