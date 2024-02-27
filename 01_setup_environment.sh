@@ -51,7 +51,12 @@ echo "REBUILD oniguruma ****************************"
 yum install -y oniguruma
 echo "library config ****************************"
 sudo ldconfig
+echo "set LD_LIBRARY_PATH ****************************"
+export LD_LIBRARY_PATH=$(find / -name libonig.so.2 -exec dirname {} \; | head -n 1):$LD_LIBRARY_PATH
 
 
+echo "PHP VERSION ****************************"
+php --version
 echo "CHECK IMAGICK ****************************"
 php --ri imagick
+
