@@ -23,4 +23,10 @@ yum install -y php-cli php-mbstring php-pear php-devel php-opcache php-intl php-
 echo "INSTALL IMAGICK ****************************"
 yum install -y php-imagick
 yum install -y php-sodium
-php --ri imagick
+
+
+# /usr/local/directadmin/custombuild/build update
+# /usr/local/directadmin/custombuild/build php n
+# /usr/local/directadmin/custombuild/build rewrite_confs
+
+# php --ri imagick
