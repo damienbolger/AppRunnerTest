@@ -2,8 +2,8 @@
 
 
 echo "disable yum priorities"
-yum --disableplugin=priorities
-
+echo -e "[main]\nenabled=0" | tee /etc/yum/pluginconf.d/priorities.conf
+echo "check yum priorities"
 cat /etc/yum/pluginconf.d/priorities.conf
 
 exit
