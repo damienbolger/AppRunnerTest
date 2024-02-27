@@ -24,6 +24,8 @@ echo "install php-cli ****************************"
 yum install -y php-cli
 
 echo "INSTALL IMAGICK and SODIUM ****************************"
+yum --enablerepo=remi,remi-php81 list available | grep imagick
+yum --enablerepo=remi,remi-php81 list available | grep sodium
 yum install -y php-imagick
 yum install -y php-sodium
 

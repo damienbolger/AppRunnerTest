@@ -10,7 +10,7 @@ build:
       - chmod +x ./start.sh
       - ./01_composer_install.sh
 run:
-  runtime-version: 8.1.27
+  runtime-version: 8.1
   command: ./start.sh
   network:
     port: 8000
