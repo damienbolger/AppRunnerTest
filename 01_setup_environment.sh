@@ -37,7 +37,7 @@ yum-config-manager --disable 'remi-php*'
 
 echo "REBUILD oniguruma ****************************"
 yum install -y oniguruma
-ldconfig
+sudo ldconfig
 
 
 echo "CHECK IMAGICK ****************************"
