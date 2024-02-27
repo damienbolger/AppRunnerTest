@@ -25,10 +25,10 @@ yum install -y php-imagick
 yum install -y php-sodium
 
 
-echo "REBUILD PHP ****************************"
-/usr/local/directadmin/custombuild/build update
-/usr/local/directadmin/custombuild/build php n
-/usr/local/directadmin/custombuild/build rewrite_confs
+echo "REBUILD oniguruma ****************************"
+yum install -y oniguruma
+ldconfig
+
 
 echo "CHECK IMAGICK ****************************"
 php --ri imagick
