@@ -1,11 +1,14 @@
 #!/bin/bash
 
 
+echo "INSTALL REGULAR PHP EXTENSIONS ****************************"
+yum install -y php-cli php-mbstring php-pear php-devel php-opcache php-intl php-mysqlnd php-gd php-exif php-xsl php-bcmath php-mysqli php-mailparse
+
+
 echo "disable yum priorities ****************************"
 echo -e "[main]\nenabled=0" | tee /etc/yum/pluginconf.d/priorities.conf
 echo "check yum priorities"
 cat /etc/yum/pluginconf.d/priorities.conf
-
 
 echo "INSTALL EPEL AND REMI REPOS ****************************"
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -14,15 +17,22 @@ echo "update yum and install utils ****************************"
 yum -y update
 yum install -y yum-utils
 
+echo "enable remi-php81 ****************************"
 yum-config-manager --disable 'remi-php*'
 yum-config-manager --enable remi-php81
-
-echo "INSTALL REGULAR PHP EXTENSIONS ****************************"
-yum install -y php-cli php-mbstring php-pear php-devel php-opcache php-intl php-mysqlnd php-gd php-exif php-xsl php-bcmath php-mysqli php-mailparse
 
 echo "INSTALL IMAGICK ****************************"
 yum install -y php-imagick
 yum install -y php-sodium
+
+echo "enable yum priorities ****************************"
+echo -e "[main]\nenabled=1" | tee /etc/yum/pluginconf.d/priorities.conf
+echo "check yum priorities now..."
+cat /etc/yum/pluginconf.d/priorities.conf
+
+
+echo "disable remi-php81 ****************************"
+yum-config-manager --disable 'remi-php*'
 
 
 echo "REBUILD oniguruma ****************************"
