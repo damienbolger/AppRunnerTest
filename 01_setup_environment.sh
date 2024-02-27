@@ -4,6 +4,10 @@
 echo "disable yum priorities"
 yum --disableplugin=priorities
 
+cat /etc/yum/pluginconf.d/priorities.conf
+
+exit
+
 echo "update yum"
 yum -y update
 
