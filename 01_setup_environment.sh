@@ -5,6 +5,7 @@
 # yum -y update
 # sudo yum install -y yum-utils
 # yum-config-manager --enable remi-php81
-yum install -y php-cli
+# yum install -y php-cli
 # sudo yum install -y php-cli php-imagick php-mbstring php-pear php-devel php-imagick php-opcache php-intl php-mysqlnd php-gd php-exif php-xsl php-bcmath php-mysqli php-sodium php-mailparse
-chmod +x ./startup.sh
+# chmod +x ./startup.
+ls -lah

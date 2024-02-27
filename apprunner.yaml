@@ -4,6 +4,7 @@ build:
   commands:
     pre-build:
       - chmod +x ./01_setup_environment.sh
+      - ./01_setup_environment.sh
     build:
       - chmod +x ./01_composer_install.sh
       - chmod +x ./start.sh
