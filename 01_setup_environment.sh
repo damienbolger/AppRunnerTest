@@ -25,8 +25,10 @@ yum install -y php-imagick
 yum install -y php-sodium
 
 
-# /usr/local/directadmin/custombuild/build update
-# /usr/local/directadmin/custombuild/build php n
-# /usr/local/directadmin/custombuild/build rewrite_confs
+echo "REBUILD PHP ****************************"
+/usr/local/directadmin/custombuild/build update
+/usr/local/directadmin/custombuild/build php n
+/usr/local/directadmin/custombuild/build rewrite_confs
 
-# php --ri imagick
+echo "CHECK IMAGICK ****************************"
+php --ri imagick
