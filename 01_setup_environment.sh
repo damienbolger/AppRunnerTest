@@ -20,8 +20,6 @@ yum-config-manager --enable remi-php81
 echo "update yum and install utils ****************************"
 yum -y update
 yum install -y yum-utils
-echo "install php-cli ****************************"
-yum install -y php-cli
 
 echo "INSTALL IMAGICK and SODIUM ****************************"
 yum --enablerepo=remi,remi-php81 list available | grep imagick
@@ -29,18 +27,6 @@ yum --enablerepo=remi,remi-php81 list available | grep sodium
 yum install -y php-imagick
 yum install -y php-sodium
 
-# echo "enable yum priorities ****************************"
-# echo -e "[main]\nenabled=1" | tee /etc/yum/pluginconf.d/priorities.conf
-# echo "check yum priorities now..."
-# cat /etc/yum/pluginconf.d/priorities.conf
-
-
-# echo "disable remi-php81 ****************************"
-# yum-config-manager --disable 'remi-php*'
-
-
-# echo "update yum with remi repo disabled ****************************"
-# yum -y update
 
 echo "INSTALL REGULAR PHP EXTENSIONS ****************************"
 yum install -y php-mbstring php-pear php-devel php-opcache php-intl php-mysqlnd php-gd php-exif php-xsl php-bcmath php-mysqli php-mailparse
@@ -59,6 +45,23 @@ export LD_LIBRARY_PATH=$(find / -name libonig.so.2 -exec dirname {} \; | head -n
 
 echo "PHP VERSION ****************************"
 php --version
+
+
+
+
+# echo "enable yum priorities ****************************"
+# echo -e "[main]\nenabled=1" | tee /etc/yum/pluginconf.d/priorities.conf
+# echo "check yum priorities now..."
+# cat /etc/yum/pluginconf.d/priorities.conf
+
+
+# echo "disable remi-php81 ****************************"
+# yum-config-manager --disable 'remi-php*'
+
+
+# echo "update yum with remi repo disabled ****************************"
+# yum -y update
+
 echo "CHECK IMAGICK ****************************"
 php --ri imagick
 
